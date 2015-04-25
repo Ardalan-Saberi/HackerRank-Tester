@@ -15,8 +15,9 @@ public class Solution {
 		t = in.nextInt();
 
 		for (int i = 0; i < t; i++) {
-			String creditCardNumber = in.next();
 			
+			String creditCardNumber = in.next();
+			A = 0;  B = 0;
 			for (int j = 0; j <creditCardHalfWidth; j += 2){
 				pokeB(Integer.parseInt(creditCardNumber.substring(j, j+1)));
 				pokeA(Integer.parseInt(creditCardNumber.substring(j+1, j+2)));
